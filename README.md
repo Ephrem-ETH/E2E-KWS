@@ -1,6 +1,6 @@
 ## End-to-End Keyword Spotting (E2E-KWS) using a character level  LSTM 
 
-Our model is similar to the transcription model (Graves 2012) used for the ASR task. We adopted this model and trained sequence to sequence using connectionist temporal classification loss (CTC in short) on character level for keyword spotting task. We call our model  "CTC-based RNN"  First, we train the model using 1000 hours of librispeech.  Then, we retrain the librispeech trained model by varying the size of the Google Speech Commands (V2) dataset. Using 100% training material of GSC, we obtained STOA accuracy for the 12-commands recognition task and competitive performance for the 35-commands recognition task. However, the performance is not worse even after retraining with less percentage (i.e., 5%,25%, 50%, and 75%) of GSC training material. In what follows, the results of our experiments are depicted.  
+Our model is similar to the transcription model used for the ASR task in [1]. We adopted this model and trained sequence to sequence using connectionist temporal classification loss (CTC in short) on character level for keyword spotting task. We call our model  "CTC-based RNN"  First, we train the model using 1000 hours of librispeech.  Then, we retrain the librispeech trained model by varying the size of the Google Speech Commands (V2) dataset. Using 100% training material of GSC, we obtained STOA accuracy for the 12-commands recognition task and competitive performance for the 35-commands recognition task. However, the performance is not worse even after retraining with less percentage (i.e., 5%,25%, 50%, and 75%) of GSC training material. In what follows, the results of our experiments are depicted.  
 
 
 
@@ -43,4 +43,4 @@ python eval.py <path to best model> [--ctc] --bi
 * numpy 1.14
 
 ## Reference
-* RNN Transducer (Graves 2012): [Sequence Transduction with Recurrent Neural Networks](https://arxiv.org/abs/1211.3711)
+* [1] RNN Transducer (Graves 2012): [Sequence Transduction with Recurrent Neural Networks](https://arxiv.org/abs/1211.3711)
