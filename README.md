@@ -33,7 +33,7 @@ python eval.py <path to best model> [--ctc] --bi
 
 |model|Accuracy (12-V2) |Accuracy (35-V2)|
 |:-----------------:|:-------:|:-------:|
-|CTC-based RNN(our model)  |98.93 | 95.83|
+|CTC-based RNN(our model)  |98.95 | 95.85|
 
 
 
