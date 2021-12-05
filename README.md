@@ -12,7 +12,7 @@ Our model is similar to the transcription model used for ASR task in [1]. We ado
 
 
 ## Our proposed KWS architecure  
-<img src="conf/KWS.jpg"/>
+<img src="conf/kws_model.png"/>
 
 
 ## Run
