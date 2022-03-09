@@ -1,6 +1,6 @@
 ## End-to-End Keyword Spotting (E2E-KWS) using a character level  LSTM 
 
-Our model is similar to the transcription model used for ASR task in [1]. We adopted this model and trained sequence to sequence using connectionist temporal classification loss (CTC in short) on character level for keyword spotting task. We call our model  "CTC-based RNN"  First, we train the model using 1000 hours of librispeech.  Then, we retrain the librispeech trained model by varying the size of the Google Speech Commands (V2) dataset. Using 100% training material of GSC, we obtained STOA accuracy for the 12-commands recognition task and competitive performance for the 35-commands recognition task. However, the performance is not worse even after retraining with less percentage (i.e., 5%,25%, 50%, and 75%) of GSC training material. In what follows, the results of our experiments are depicted.  
+Our model is similar to the transcription model used for ASR task in [1]. We adopted this model and trained sequence to sequence using connectionist temporal classification loss (CTC in short) on character level for keyword spotting task. We call our model  "CTC-based RNN"  First, we train the model using 1000 hours of librispeech.  Then, we retrain the librispeech trained model by varying the size of the Google Speech Commands (V2) dataset. Using 100% training material of GSC, we obtained STOA accuracy for the 12-commands recognition task and competitive performance for the 35-commands recognition task. In addition, the performance is not worse even after retraining with less percentage (i.e., 5%,25%, 50%, and 75%) of GSC training material. In what follows, the results of our experiments are depicted.  
 
 
 
@@ -12,7 +12,7 @@ Our model is similar to the transcription model used for ASR task in [1]. We ado
 
 
 ## Our proposed KWS architecure  
-<img src="conf/KWS.jpg"/>
+<img src="conf/kws_model.png"/>
 
 
 ## Run
@@ -33,7 +33,7 @@ python eval.py <path to best model> [--ctc] --bi
 
 |model|Accuracy (12-V2) |Accuracy (35-V2)|
 |:-----------------:|:-------:|:-------:|
-|CTC-based RNN(our model)  |98.93 | 95.83|
+|CTC-based RNN(our model)  |98.95 | 95.85|
 
 
 
