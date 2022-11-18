@@ -41,6 +41,7 @@ python eval.py <path to best model> [--ctc] --bi
 * Python 3.6
 * PyTorch >= 0.4
 * numpy 1.14
-
+## Paper
+* https://ieeexplore.ieee.org/document/9746012
 ## Reference
 * [1] RNN Transducer (Graves 2012): [Sequence Transduction with Recurrent Neural Networks](https://arxiv.org/abs/1211.3711)
